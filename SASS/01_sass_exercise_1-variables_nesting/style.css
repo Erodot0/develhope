@@ -1,0 +1,22 @@
+div {
+  border: red solid;
+  padding: 1rem;
+  text-align: center;
+}
+div h1 {
+  color: green;
+  -webkit-text-decoration: underline blue;
+          text-decoration: underline blue;
+}
+div section {
+  display: flex;
+}
+div section article {
+  border: solid green 2px;
+}
+div section article:nth-child(even) {
+  color: red;
+}
+div section article:nth-child(odd) {
+  color: blue;
+}/*# sourceMappingURL=style.css.map */

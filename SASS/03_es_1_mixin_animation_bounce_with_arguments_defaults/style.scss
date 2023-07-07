@@ -1,0 +1,31 @@
+@mixin random-bgr(){
+    background-color: rgb(random(255), random(255), random(255));
+  }
+
+body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    @include random-bgr();
+    position: relative;
+    border-radius: 50%;
+}
+
+@mixin bounce($start, $distance) {
+    @keyframes bounce {
+       0% {top: $start;}
+       40% {top: $distance;}
+       60% {top: $distance / 2;}
+       100% {top: $start;}
+    }
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+    @include bounce(0, 30px)
+}

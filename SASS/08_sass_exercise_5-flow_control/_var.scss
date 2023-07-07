@@ -1,0 +1,9 @@
+$red: red;
+$blue: blue;
+$green: green;
+
+@mixin article($color, $borderclr, $fontsize) {
+    color: $color;
+    border: solid rem(1px) $borderclr;
+    font-size: $fontsize;
+}

@@ -1,0 +1,66 @@
+// FUNCTIONS
+
+@function random-hex() { 
+    $rgb: "";
+    $i: 6;
+    @while $i >0 {
+        // il ciclo si ripete finchè i è maggiore di 0
+        $code: random(16);
+        $letters: A,B,C,D,E,F;
+
+        @if $code > 9 {
+            // con questa condizione si va a pescare una lettera
+            $code: nth($letters, random(6));
+        }
+
+        $rgb: str-insert($rgb, ""+$code, 0);
+
+        // ogni volta che il ciclo si ripete i diventa -1
+        $i: $i - 1; 
+    }
+
+    @return unquote("#" +$rgb);
+}
+
+// END
+
+// MIXIN
+
+@mixin bounce($start, $distance) {
+    @keyframes bounce {
+       0% {top: $start}
+       40% {top: $distance}
+       60% {top: $distance / 2}
+       100% {top: $start}
+    }
+}
+
+// END
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bounce {
+    margin: 2rem;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    animation: bounce 2s infinite;
+
+    @include bounce(0, 30px);
+}
+
+.bg-random {
+    $i:0;
+    @while $i<12 {
+      &:nth-child(#{$i+1}) {
+        background-color: random-hex();
+      }
+      $i: $i+1;
+    }
+}

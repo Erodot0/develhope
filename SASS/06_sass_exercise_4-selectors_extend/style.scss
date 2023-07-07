@@ -1,0 +1,52 @@
+@import 'var', 'fun';
+
+%shared {
+    border: $red solid rem(2px);
+    padding: 1rem;
+    text-align: center;
+}
+
+div {
+    @extend %shared;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        color: $green;
+        text-decoration: underline $blue;
+    }
+
+    h2 {
+        @extend h1;
+        @extend %shared;
+        width: fit-content;
+        text-decoration: none;
+    }
+
+
+    section {
+        display: flex;
+        justify-content: center;
+
+        article {
+            border: solid $green rem(2px);
+            width: 100%;
+
+            &:nth-child(even) {
+                @include article($red, $green, 1rem);
+            }
+
+            &:nth-child(odd) {
+                @include article($blue, $green, 1rem);
+            }
+        }
+
+        &:nth-child(4) {
+            article {
+                margin-top: 1rem;
+                @include article($green, $blue, rem(24px));
+            }
+        }
+    }
+}

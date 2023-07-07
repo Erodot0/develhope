@@ -1,0 +1,46 @@
+body {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(13, 24, 112);
+  position: relative;
+  border-radius: 50%;
+}
+
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite;
+}
+@-webkit-keyframes bounce {
+  0% {
+    top: 0;
+  }
+  40% {
+    top: 30px;
+  }
+  60% {
+    top: 15px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
+  40% {
+    top: 30px;
+  }
+  60% {
+    top: 15px;
+  }
+  100% {
+    top: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
