@@ -1,0 +1,5 @@
+Inject the bike dependencies
+
+il dependency injection è un pattern che riceve gli oggetti da cui dipende
+l'injector inizializza gli oggetti ed inietta le dipendenze può essere utile 
+per avere del codice riutilizzabile e per semplificare il processo di testing

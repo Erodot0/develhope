@@ -1,0 +1,19 @@
+Exercise 4 - Add support for CORS to your API
+
+Configure your API to enable CORS for requests from the origin http://localhost:8080.
+
+step1 >>> creazione del listing.html
+
+step2 >>> npm install --save-dev serve                 installazione di serve nelle dev dep, per lo static site locale
+            aggiunta nel json dello script             web: serve -p 8080 /web           web comando, serve -p 8080 porta, web/ la cartella 
+
+            A questo punto se si guarda c'è un problema dovuto al cors (cross origin resources sharing)
+            per risolvere dobbiamo gestire l'headers dell'api, per farlo in questo caso utilizziamo un ulteriore pack
+
+step3 >>> npm install cors                             installazione cors per la gestione di alcune opzioni(header in questo caso)
+          npm install --save-dev @types/cors           che famo i tipi non li mettiamo nelle dev dep?
+
+
+step4 >>> importiamo su App quello che ci serve ora
+
+step5 >>> fare un check dei test ed aggiungere quello che ci serve, ovvero il controllo dell'Access-Origin

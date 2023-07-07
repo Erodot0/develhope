@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <!-- inizializziamo un form a cui diamo come azione l'indirizzo a cui inviare i dati
+    ulteriormente daremo il metodo post per inviare i dati, e dato che stiamo inviando un file
+    dobbiamo andare ad utilizzare come enctype il multiform/form-data -->
+    <form action="http://localhost:3000/planets/3/photo"
+            method="post"
+            enctype="multipart/form-data">
+            <input type="file" name="photo">
+            <input type="submit">
+        </form>
+</body>
+
+</html>

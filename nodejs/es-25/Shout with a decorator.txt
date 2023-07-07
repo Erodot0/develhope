@@ -1,0 +1,6 @@
+Shout with a decorator
+
+il decorator è un structural design pattern che ci permette di cambiare
+dinamicamente il comportamento di un oggetto esistente.
+può essere utile per il cambiamento di oggetti specifici senza influenzare altri
+oggetti dello stesso tipo

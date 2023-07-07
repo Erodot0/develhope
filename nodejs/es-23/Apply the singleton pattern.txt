@@ -1,0 +1,7 @@
+Apply the singleton pattern
+
+Il singleton design pattern è un pattern di creazione
+limita la creazione di oggetti di una classe in  una singola istanza
+centralizzando l'accesso a questa istanza, risulta dunque utile per 
+la condivisione di informazioni e per ottimizzare l'utilizzo delle risorse
+o per sincronizzare l'accesso a queste ultime
