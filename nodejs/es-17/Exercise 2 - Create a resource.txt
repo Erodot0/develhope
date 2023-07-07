@@ -1,0 +1,12 @@
+Exercise 2 - Create a resource
+
+Add a route to your API that creates a resource. The route should validate the request body data.
+
+step 1>>> npm install express-json-validator-middleware      serve per integrare la validazione
+
+step 2>>> npm install ajv-formats                            aggiunge formati di validazione es. email, data, ora ecc
+
+step 3>>> creare dentro lib/validation/index.ts
+
+step 4>>> npm install @sinclair/typebox                      ci aiuta a creare uno schema json cosi che possiamo descrivere i dati che ci aspettiamo(serve per il validation)
+a sto punto aggiungere in validation/planet.ts

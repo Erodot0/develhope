@@ -1,0 +1,61 @@
+Retrieve all resources
+
+In this exercise you'll build on what you created in 'Unit 12, Exercise 1: Create a database and Prisma model'.
+
+Add a route to your API that retrieves all resources.
+
+step 1>>> npm init --yes
+            inizializzare il progetto ed 
+            -eliminare description, name, main, keywords, author e license
+            -creare file .gitignore con moduli e file .env
+            -aggiungere engines nel .json sotto gli scripts con versione node
+
+step 2>>> npm install --save-dev jest
+            installare jest nelle dependencies
+            creare file jest.config.js e compilarlo con 
+            module.exports 
+                preset
+                testEnvironment
+                verbose
+
+            add test jest to .json
+
+            npm install --save-dev ts-jest                      installare nelle dev dep ts per jest nelle dev dependencies
+            npm install --save-dev @types/jest                  installare nelle dev dep i tipi per jest
+
+step 3>>> npm install --save-dev typescript                     installare nelle dev dep ts
+            npm install --save-dev @types/node                  installare nelle dev dep types node
+            npm install --save-dev @tsconfig/node16             installare nelle dev dep types per node v 16
+            CREARE file tsconfig.json
+                    extend dei file node16
+                    compiler outDir e sourceMap
+                    include file in src .ts
+                    exclude file ins src test.ts
+
+step 4>>> npm install express                                   installare express
+            npm install express-async-errors                    installare gestione errori dell'async su express
+            npm install --save-dev @types/express               installare i tipi per express
+
+step 5>>> npm install --save-dev nodemon                        installare nelle dev dep nodemone per watch
+
+step 6>>> npm install --save-dev concurrently                   installare nelle dev dep per eseguire in simultanea
+          npm install --save-dev supertest @types/supertest     installare supertest e tipi supertest nelle dev dependencies
+          npm install dotenv                                    installare dotenv e creare il file
+                    inserire la PORT
+
+postgresql su pc, niente installazioni, creazione del server tranquilla, andare a mettere su .env password e nome server
+
+step 7>>> npm install @prisma/client                            installare il client di prisma
+            npm install --save-dev prisma                       installare nelle dev dep prisma
+
+            npx prisma init                                     inizializzare prisma e settare il modello che andrà ad essere struttura sul server
+            npx prisma migrate dev --name init                  inizializzare la migrazione
+
+step 8>>> npm install --save-dev jest-mock-extended             creare client.mock.ts copia/incolla dello schifo
+
+step 9>>> add scripts to json
+    "build": "tsc",
+    "build:dev": "tsc --watch",
+    "start": "node --enable-source-maps dist/server.js",
+    "start:dev": "nodemon --watch dist/ --watch .env",
+    "dev": "npm run build && concurrently 'npm:build:dev' 'npm:start:dev'"
