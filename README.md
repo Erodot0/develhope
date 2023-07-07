@@ -17,43 +17,43 @@ Feel free to explore the folders and check out the exercises. You may find code 
 
 ## HTML
 
-Folder: [`html/`](html/)
+Folder: [`html/`](Html/)
 
 This folder contains exercises related to HTML. You will find HTML files showcasing different markup structures, tags, and elements.
 
 ## CSS
 
-Folder: [`css/`](css/)
+Folder: [`css/`](CSS/)
 
 In the CSS folder, you will find exercises demonstrating the usage of CSS for styling web pages. Various CSS properties, selectors, and layout techniques are covered.
 
 ## SCSS
 
-Folder: [`scss/`](scss/)
+Folder: [`scss/`](SASS/)
 
 The SCSS folder contains exercises that focus on using SCSS (Sassy CSS). These exercises demonstrate the power of SCSS features like variables, mixins, and nesting.
 
 ## JavaScript
 
-Folder: [`js/`](js/)
+Folder: [`js/`](javascript/)
 
 In the JavaScript folder, you will find exercises that explore JavaScript concepts, functions, loops, conditionals, and more. These exercises help solidify the foundational knowledge of JavaScript.
 
 ## React
 
-Folder: [`react/`](react/)
+Folder: [`react/`](react-exercises/)
 
 The React folder contains exercises related to React, a popular JavaScript library for building user interfaces. You will find components, state management examples, and React-specific patterns.
 
 ## JSX
 
-Folder: [`jsx/`](jsx/)
+Folder: [`jsx/`](jsx-exercises)
 
 The JSX folder contains exercises demonstrating JSX, a syntax extension for JavaScript used in React applications. These exercises show how to write JSX code and integrate it with JavaScript.
 
 ## TypeScript
 
-Folder: [`typescript/`](typescript/)
+Folder: [`typescript/`](Typescript/)
 
 In the TypeScript folder, you will find exercises that focus on TypeScript, a typed superset of JavaScript. These exercises explore TypeScript's type system, interfaces, classes, and other features.
 
