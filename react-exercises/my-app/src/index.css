@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: black;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+.container{
+    background-color: bisque;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    border: darkred 5px solid;
+    border-radius: 10px;
+    display: grid;
+    place-content: center;
+}
+
