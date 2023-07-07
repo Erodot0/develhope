@@ -1,0 +1,49 @@
+<html>
+
+<body>
+  <div id="container">
+    <h2>Person's Form</h2>
+    <form id="person-form">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
+
+<script>
+  // Code here  
+  const btn = document.querySelector("button")
+  const form = document.querySelector("#person-form")
+
+  const firtName = document.createElement("input")
+  firtName.setAttribute('type', 'text')
+  firtName.setAttribute('placeholder', 'First Name')
+  
+  const lastName = document.createElement("input")
+  firtName.setAttribute('type', 'text')
+  lastName.setAttribute('placeholder', 'Last Name')
+  
+  const age = document.createElement("input")
+  firtName.setAttribute('type', 'text')
+  age.setAttribute('placeholder', 'Age')
+  
+  const initForm = () => {
+    form.insertBefore(firtName, form.children[0]);
+    form.insertBefore(lastName, form.children[1]);
+    form.insertBefore(age, form.children[2]);
+  }
+  
+  function submitPersonForm() {
+    event.preventDefault();
+    const person = {
+      'First Name': firtName.value,
+      'Last Name': lastName.value,
+      'Age': age.value,
+    };
+    console.log(person);
+  }
+  
+  window.addEventListener("DOMContentLoaded", initForm)
+  btn.addEventListener("click", submitPersonForm)
+</script>

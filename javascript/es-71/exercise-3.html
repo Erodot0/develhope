@@ -1,0 +1,36 @@
+<html>
+  <body>
+    <div id="container">
+      <form>
+        <div>
+          <label>First Name:</label>
+          <input type="text" class="form-input" id="firstName" value="Mario"/>
+        </div>
+        <div>
+          <label>Last Name:</label>
+          <input type="text" class="form-input" id="lastName" value="Rossi"/>
+        </div>
+        <div>
+          <label>Age:</label>
+          <input type="number" class="form-input" id="age" value="25"/>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+  // code here
+  const input = document.querySelectorAll("input");
+
+function showForm(element) {
+  for (let i = 0; i < element.length; i++) {
+    let label = element[i].previousElementSibling.innerText
+    let value = element[i].value
+
+    console.log(`${label} ${value}`)
+  }
+};
+
+showForm(input);
+</script>
