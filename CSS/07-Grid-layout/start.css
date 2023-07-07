@@ -1,0 +1,40 @@
+body {
+    display: grid;
+    grid-template: 25% 50% 25% / repeat(3, 1fr);
+}
+
+
+#green {
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    grid-row-start: 1;
+}
+
+#yelloy {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+#red {
+    grid-column-start: 2;
+}
+
+#blue {
+    grid-column-start: 3;
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#orange {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-row-start: 3;
+}
+
+ul {
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 1fr;
+}

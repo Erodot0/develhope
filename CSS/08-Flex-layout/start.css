@@ -1,0 +1,15 @@
+body {
+    display: flex;
+}
+
+#yellow {
+order: -1;
+}
+
+#red {
+ order: -1;
+}
+
+#orange {
+ flex-grow: 1;
+}

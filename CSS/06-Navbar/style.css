@@ -1,0 +1,137 @@
+/* reset default settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* list */
+    list-style: none;
+    /* links */
+    text-decoration: none;
+    /* buttons */
+    background: none;
+    border: none;
+
+    color: white;
+}
+
+li {
+    display: inline-block;
+}
+
+/* gray color */
+
+.gray {
+    color: darkgray;
+}
+
+/* navbar */
+
+.navbar {
+    display: flex;
+
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: #212429;
+
+    padding: 15px 10px;
+    width: 100%;
+    height: 70px;
+}
+
+/* Navbar sections */
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-form {
+    flex: 1;
+    width: 100%;
+    align-self: center;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Nav-list elements */
+
+.drop-items {
+    display: none;
+}
+
+.nav-link {
+    padding: 0 10px;
+}
+
+.fa-caret-down {
+    padding-left: 7px;
+}
+
+/* search bar */
+
+#sbar {
+    background-color: white;
+    border-radius: 5px;
+
+    padding: 10px;
+    margin: 0 10px;
+    max-width: 200px;
+    width: 100%;
+
+    font-size: 20px;
+    color: black;
+}
+
+/* search bar placeholder */
+#sbar::placeholder {
+    font-size: 20px;
+}
+
+/* search button */
+
+.nav-search {
+    font-size: 20px;
+    padding: 5px 10px;
+    border: solid green;
+    border-radius: 5px;
+    color: green;
+}
+
+/* search button hover effect */
+.nav-search:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+/* Burger menù */
+
+.b-menu {
+    display: none;
+}
+
+
+/* media query */
+
+@media screen and (max-width:768px) {
+    .nav-form {
+        display: none;
+        transition: 1s;
+    }
+
+    .nav-list li:not(:first-child) {
+        display: none;
+    }
+
+    .b-menu {
+        display: list-item;
+
+        flex: 1;
+        align-self: center;
+        text-align: right;
+
+        margin-right: 10px;
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,126 @@
+img {
+    display: block;
+
+    max-width: 350px;
+    width: 100%;
+    height: 100%;
+}
+
+strong {
+    font-weight: 800;
+}
+
+body {
+    display: flex;
+}
+
+/* Card style */
+
+.card {
+    border-radius: 20px;
+
+    max-width: 350px;
+    margin: 20px;
+    padding-bottom: 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(#aeaeae, #f0f0f0);
+}
+
+/* header */
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+
+    padding: 5px 10px;
+}
+
+/* header elements */
+
+.user-pfp {
+    border-radius: 50%;
+
+    width: 40px;
+    height: 40px;
+    content: url(assets/catpfp.jpg.crdownload);
+
+    align-self: center;
+
+    background-color: white;
+}
+
+.user-info {
+    margin-left: 10px;
+    align-self: center;
+}
+
+.user-info h3 {
+    margin: 0;
+    padding-bottom: 2px;
+}
+
+.user-info span {
+    font-size: 14px;
+    color: #efefef;
+}
+
+.card-dots {
+    flex: 1;
+    align-self: center;
+
+    margin-right: 10px;
+
+    text-align: end;
+    font-size: 20px;
+}
+
+/* Card body */
+
+.card-reaction {
+
+    padding: 10px 20px 0;
+}
+
+.card-reaction i {
+    padding: 3px;
+    cursor: pointer;
+}
+
+.card-text {
+    padding: 0 5px;
+    margin: 10px;
+}
+
+/* Like and comment animations :) */
+
+.fa-heart:hover {
+    font-size: 30px;
+    transition: 0.3s;
+    color: red;
+}
+
+.fa-comment:hover {
+    font-size: 30px;
+    transition: 0.3s;
+    color: blue;
+}
+
+/* media query */
+
+/* tablet 768px */
+@media screen and (max-width:768px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+/* smartphone 375px */
+@media screen and (max-width:375px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
