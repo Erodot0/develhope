@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Lezione HTML</title>
+	<style>
+		label {
+			display: block
+		}
+	</style>
+</head>
+
+<body>
+	<form action="database.php">
+		<section>
+			<div>
+				<label for="email">Inserire la propria mail:
+					<input type="email" name="email" id="email" placeholder="email" required>
+				</label>
+			</div>
+			<div>
+				<label for="password"> inserire la propria passoword:
+					<input type="password" name="password" id="password">
+				</label>
+			</div>
+			<div>
+				<label for="fname">inserire il nome
+					<input type="text" name="fname" id="fname" placeholder="calogero">
+				</label>
+			</div>
+			<div>
+				<label for="sname">inserire il cognome
+					<input type="text" name="fname" id="fname" placeholder="cognome">
+				</label>
+			</div>
+			<div>
+				<label for="bday">inserire la data di nascita
+					<input type="date" name="data" id="bday">
+				</label>
+			</div>
+			<div>
+				<label for="tel">inserire il numero di telefono
+					<input type="tel" name="telefono" id="tel" maxlength="11">
+				</label>
+			</div>
+			<div>
+				<label for="selector">selezionare abbonamento
+					<select name="selector" id="selector">
+						<option value="free plan">piano free</option>
+						<option value="30">30</option>
+						<option value="60">60</option>
+						<option value="90">90</option>
+					</select>
+				</label>
+			</div>
+			<div>
+				<label for="proplan">selezionare per piano pro
+					<input type="checkbox" name="plan" id="proplan">
+				</label>
+			</div>
+			<div>
+				<fieldset>
+					<legend>Carta di credito</legend>
+					<label for="card">Numero carta
+						<input type="tel" name="carta" id="card" maxlength="16" placeholder="xxxx-xxxx-xxxx-xxxx">
+					</label>
+					<label for="exp">Scadenza
+						<input type="month" name="scadenza" id="exp">
+					</label>
+					<label for="cvc">Inserire il CVC
+						<input type="tel" name="cvc" id="cvc" maxlength="3" placeholder="123">
+					</label>
+				</fieldset>
+			</div>
+			<div>
+				<label for="address">Inserire l'indirizzo di fatturazione
+					<input type="text" name="address" id="address" placeholder="via, città, provincia e paese">
+				</label>
+			</div>
+			<div>
+				<button type="submit">Invia</button>
+			</div>
+		</section>
+	</form>
+
+</body>
+
+</html>
